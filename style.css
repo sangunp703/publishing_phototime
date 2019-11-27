@@ -128,3 +128,109 @@ body::-webkit-scrollbar{
   width: auto;
   content: url('https://placehold.it/350X200');
 }
+
+.design-part{
+  position: relative;
+  background-color: white;
+  height: 25vw;
+}
+.design-part__img{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20vw;
+  width: auto;
+  content: url('https://placehold.it/350X200');
+}
+.design-part__box{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 30vw;
+  transform: translateY(-50%);
+}
+.design-part__title{
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: #30aa92;
+  font-weight: bold;
+}
+.design-part__content{
+  font-size: 1vw;
+  line-height: 1.5vw;
+  margin: 2vw 0;
+}
+.design-part__btn{
+  all: unset;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 0.5vw;
+  background-color: #16a085;
+  font-size: 1vw;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2vw;
+}
+.design-part__present{
+  font-size: 1vw;
+}
+.design-part__control{
+  all:unset;
+  margin-right:0.5vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.community-part{
+  position: relative;
+  background-color: #f5f6f7;
+  height: 25vw;
+}
+.community-part__box{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 15vw;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.community-part__logo{
+  content: url('./resource/camera.svg');
+  width: 5vw;
+  height: 5vw;
+}
+.community-part__title{
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  margin: 2vw 0;
+}
+.community-part__content{
+  font-size: 1vw;
+  line-height: 1.5vw;
+}
+.community-part__photo-box{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.community-part__control-box{
+  text-align: right;
+}
+.community-part__control{
+  all:unset;
+  margin-right:0.5vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+.community-part__image{
+  content: url('https://placehold.it/250X150');
+  height: 15vw;
+  width: auto;
+  margin: 0.5vw;
+}
