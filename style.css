@@ -11,7 +11,7 @@ body::-webkit-scrollbar{
 .header {
   position: relative;
   width: 100vw;
-  height: 50vw;
+  height: 49vw;
   color: white;
   background-image: url('./resource/main.jpg');
   background-size: 100% auto;
@@ -65,7 +65,7 @@ body::-webkit-scrollbar{
 .title__btn{
   all: unset;
   width: 15vw;
-  height: 5vw;
+  height: 4vw;
   border-radius: 0.5vw;
   background-color: #16a085;
   font-size: 1.5vw;
@@ -82,4 +82,49 @@ body::-webkit-scrollbar{
   float: left;
   margin: 1vw;
   cursor: pointer;
+}
+
+.intro-part{
+  position: relative;
+  background-color: #f5f6f7;
+  height: 25vw;
+}
+.intro-part__box{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 30vw;
+  transform: translateY(-50%);
+}
+.intro-part__title{
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  color: #30aa92;
+  font-weight: bold;
+}
+.intro-part__content{
+  font-size: 1vw;
+  line-height: 1.5vw;
+  margin: 2vw 0;
+}
+.intro-part__btn{
+  all: unset;
+  width: 15vw;
+  height: 4vw;
+  border-radius: 0.5vw;
+  background-color: #16a085;
+  font-size: 1vw;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+.intro-part__img{
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20vw;
+  width: auto;
+  content: url('https://placehold.it/350X200');
 }
