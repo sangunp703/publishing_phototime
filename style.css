@@ -313,3 +313,40 @@ body::-webkit-scrollbar{
   float: right;
   border-radius: 0 0.5vw 0.5vw 0;
 }
+
+.footer{
+  position: relative;
+  height: 10vw;
+}
+
+.info{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+
+.info__item{
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 1vw;
+  border-right: 1px solid gray;
+  text-transform: uppercase;
+}
+.info__item:nth-last-of-type(1){
+  border-right: 0px solid gray;
+}
+.info__copyright{
+  padding: 0 1vw;
+  margin-top: 1vw;
+}
+
+.footer__logo{
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  content: url('./resource/camera.svg');
+  width: 5vw;
+  height: 5vw;
+}
