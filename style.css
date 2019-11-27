@@ -1,6 +1,22 @@
 @import './reset.css';
 @import 'https://fonts.googleapis.com/css?family=Varela+Round&display=swap';
 
+@media (min-width: 1024px){
+  html{
+    font-size: 10.24px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px){
+  html{
+    font-size: 1vw;
+  }
+}
+@media (max-width: 767px){
+  html{
+    font-size: 7.67px;
+  }
+}
+
 body{
   font-family: 'Varela Round', sans-serif;
 }
@@ -17,7 +33,7 @@ body::-webkit-scrollbar{
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-transform: uppercase;
-  font-size: 2vw;
+  font-size: 2rem;
 }
 .main-nav {
   position: absolute;
@@ -56,7 +72,7 @@ body::-webkit-scrollbar{
   text-align: center;
 }
 .title__main{
-  font-size: 4vw;
+  font-size: 4rem;
 }
 .title__content{
   text-transform: lowercase;
@@ -68,7 +84,7 @@ body::-webkit-scrollbar{
   height: 4vw;
   border-radius: 0.5vw;
   background-color: #16a085;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   margin: 1vw 0;
   cursor: pointer;
 }
@@ -83,11 +99,15 @@ body::-webkit-scrollbar{
   margin: 1vw;
   cursor: pointer;
 }
+.icon-nav__icon{
+  width: 2rem;
+  height: 2rem;
+}
 
 .intro-part{
   position: relative;
   background-color: #f5f6f7;
-  height: 25vw;
+  height: 30vw;
 }
 .intro-part__box{
   position: absolute;
@@ -97,13 +117,13 @@ body::-webkit-scrollbar{
   transform: translateY(-50%);
 }
 .intro-part__title{
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #30aa92;
   font-weight: bold;
 }
 .intro-part__content{
-  font-size: 1vw;
+  font-size: 1rem;
   line-height: 1.5vw;
   margin: 2vw 0;
 }
@@ -113,7 +133,7 @@ body::-webkit-scrollbar{
   height: 4vw;
   border-radius: 0.5vw;
   background-color: #16a085;
-  font-size: 1vw;
+  font-size: 1rem;
   cursor: pointer;
   text-align: center;
   color: white;
@@ -132,7 +152,7 @@ body::-webkit-scrollbar{
 .design-part{
   position: relative;
   background-color: white;
-  height: 25vw;
+  height: 30vw;
 }
 .design-part__img{
   position: absolute;
@@ -151,13 +171,13 @@ body::-webkit-scrollbar{
   transform: translateY(-50%);
 }
 .design-part__title{
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: #30aa92;
   font-weight: bold;
 }
 .design-part__content{
-  font-size: 1vw;
+  font-size: 1rem;
   line-height: 1.5vw;
   margin: 2vw 0;
 }
@@ -167,7 +187,7 @@ body::-webkit-scrollbar{
   height: 4vw;
   border-radius: 0.5vw;
   background-color: #16a085;
-  font-size: 1vw;
+  font-size: 1rem;
   cursor: pointer;
   text-align: center;
   color: white;
@@ -175,7 +195,7 @@ body::-webkit-scrollbar{
   margin-bottom: 2vw;
 }
 .design-part__present{
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .design-part__control{
   all:unset;
@@ -187,7 +207,7 @@ body::-webkit-scrollbar{
 .community-part{
   position: relative;
   background-color: #f5f6f7;
-  height: 25vw;
+  height: 30vw;
 }
 .community-part__box{
   position: absolute;
@@ -203,7 +223,7 @@ body::-webkit-scrollbar{
   height: 5vw;
 }
 .community-part__title{
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: black;
   font-weight: bold;
@@ -239,7 +259,7 @@ body::-webkit-scrollbar{
   position: relative;
   background-image: url('./resource/main.jpg');
   background-size: 100% auto;
-  height: 50vw;
+  height: 49vw;
 }
 .subscribe-part__box{
   position: absolute;
@@ -250,35 +270,42 @@ body::-webkit-scrollbar{
 }
 .subscribe-part__title{
   color: white;
-  font-size: 2vw;
+  font-size: 2rem;
   margin-bottom: 1vw;
   text-transform: uppercase;
 }
+.subscribe-part__form{
+  position: relative;
+  width: 20vw;
+  margin: 0 auto;
+}
 .subscribe-part__email{
   all: unset;
-  background-color: white;
-  height: 3vw;
-  width: 20vw;
-  border-radius: 0.5vw;
-}
-.subscribe-part__email::placeholder{
   text-align: left;
-  font-size: 1vw;
-  padding: 1vw;
+  background-color: white;
+  padding-left: 1vw;
+  height: 3vw;
+  width: 19vw;
+  border-radius: 0.5vw;
+  font-size: 1rem;
 }
 .subscribe-part__btn{
-  all:unset;
+  position:absolute;
+  right: 0;
+  top: 0;
   background-color: #16a085;
-  height: 3vw;
-  width: 3vw;
+  height: 1vw;
+  width: 1vw;
+  padding: 1vw;
   margin-left: -1vw;
   border-radius: 0 0.5vw 0.5vw 0;
+  cursor: pointer;
 }
 
 .download-part{
   position: relative;
   background-color: #f5f6f7;
-  height: 25vw;
+  height: 30vw;
   text-align: center;
   text-transform: uppercase;
 }
@@ -289,10 +316,10 @@ body::-webkit-scrollbar{
   transform: translate(-50%, -50%);
 }
 .download-part__title{
-  font-size: 2vw;
+  font-size: 2rem;
 }
 .download-part__content{
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   margin: 2vw 0;
 }
 .download-part__btn{
@@ -308,8 +335,9 @@ body::-webkit-scrollbar{
 }
 .download-part__icon{
   background-color: #16a085;
-  width: 4vw;
-  height: 4vw;
+  width: 2vw;
+  height: 2vw;
+  padding: 1vw;
   float: right;
   border-radius: 0 0.5vw 0.5vw 0;
 }
@@ -318,14 +346,12 @@ body::-webkit-scrollbar{
   position: relative;
   height: 10vw;
 }
-
 .info{
   position: absolute;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
 }
-
 .info__item{
   display: inline-block;
   cursor: pointer;
@@ -340,7 +366,6 @@ body::-webkit-scrollbar{
   padding: 0 1vw;
   margin-top: 1vw;
 }
-
 .footer__logo{
   position: absolute;
   top: 50%;
