@@ -1,22 +1,6 @@
 @import './reset.css';
 @import 'https://fonts.googleapis.com/css?family=Varela+Round&display=swap';
 
-@media (min-width: 1024px) {
-  html {
-    font-size: 10.24px;
-  }
-}
-@media (min-width: 767px) and (max-width: 1024px) {
-  html {
-    font-size: 1vw;
-  }
-}
-@media (max-width: 767px) {
-  html {
-    font-size: 7.67px;
-  }
-}
-
 body {
   font-family: 'Varela Round', sans-serif;
 }
@@ -32,7 +16,7 @@ body::-webkit-scrollbar {
   background-image: url('./resource/main.jpg');
   background-size: cover;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 .main-nav {
   position: absolute;
@@ -72,7 +56,8 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
 }
 .title__main {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  white-space: nowrap;
 }
 .title__content {
   text-transform: lowercase;
@@ -112,18 +97,18 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 50%;
   left: 10%;
-  width: 24vw;
+  width: 30vw;
   transform: translateY(-50%);
 }
 .intro-part__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #30aa92;
   font-weight: bold;
 }
 .intro-part__content {
-  font-size: 1rem;
-  line-height: 1.5vw;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   margin: 2vw 0;
 }
 .intro-part__btn {
@@ -132,7 +117,7 @@ body::-webkit-scrollbar {
   height: 4rem;
   border-radius: 0.5rem;
   background-color: #16a085;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
   color: white;
@@ -164,18 +149,18 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 50%;
   right: 10%;
-  width: 24vw;
+  width: 30vw;
   transform: translateY(-50%);
 }
 .design-part__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #30aa92;
   font-weight: bold;
 }
 .design-part__content {
-  font-size: 1rem;
-  line-height: 1.5vw;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   margin: 2vw 0;
 }
 .design-part__btn {
@@ -184,7 +169,7 @@ body::-webkit-scrollbar {
   height: 4rem;
   border-radius: 0.5rem;
   background-color: #16a085;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-align: center;
   color: white;
@@ -192,13 +177,14 @@ body::-webkit-scrollbar {
   margin-bottom: 2vw;
 }
 .design-part__present {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .design-part__control {
   all: unset;
-  margin-right: 0.5vw;
+  margin-right: 1vw;
   font-weight: bold;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .community-part {
@@ -210,7 +196,7 @@ body::-webkit-scrollbar {
   position: absolute;
   top: 50%;
   left: 10%;
-  width: 15vw;
+  width: 20vw;
   transform: translateY(-50%);
   text-align: center;
 }
@@ -220,15 +206,15 @@ body::-webkit-scrollbar {
   height: 5vw;
 }
 .community-part__title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: black;
   font-weight: bold;
   margin: 2vw 0;
 }
 .community-part__content {
-  font-size: 1rem;
-  line-height: 1.5vw;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 .community-part__photo-box {
   position: absolute;
@@ -241,7 +227,8 @@ body::-webkit-scrollbar {
 }
 .community-part__control {
   all: unset;
-  margin-right: 0.5vw;
+  margin-right: 1vw;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
 }
@@ -267,9 +254,10 @@ body::-webkit-scrollbar {
 }
 .subscribe-part__title {
   color: white;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1vw;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .subscribe-part__form {
   position: relative;
@@ -313,10 +301,11 @@ body::-webkit-scrollbar {
   transform: translate(-50%, -50%);
 }
 .download-part__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .download-part__content {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   margin-top: 1vw;
   margin-bottom: 3vw;
 }
@@ -325,6 +314,7 @@ body::-webkit-scrollbar {
   width: 20rem;
   height: 4rem;
   line-height: 4rem;
+  font-size: 1.5rem;
   background-color: #1abc9c;
   color: white;
   text-align: left;
@@ -344,7 +334,7 @@ body::-webkit-scrollbar {
 .footer {
   position: relative;
   height: 10vw;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .info {
   position: absolute;
@@ -374,4 +364,103 @@ body::-webkit-scrollbar {
   content: url('./resource/camera.svg');
   width: 5vw;
   height: 5vw;
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 10.24px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  html {
+    font-size: 1vw;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 7.67px;
+  }
+  .main-nav__item--logo {
+    display: none;
+  }
+
+  .intro-part {
+    height: 100vw;
+  }
+  .intro-part__box {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    width: 75vw;
+  }
+  .intro-part__img {
+    top: 10%;
+    left: 50%;
+    width: 50vw;
+    height: auto;
+    transform: translate(-50%, 0%);
+  }
+
+  .design-part {
+    height: 100vw;
+  }
+  .design-part__box {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+    width: 75vw;
+  }
+  .design-part__img {
+    top: 10%;
+    left: 50%;
+    width: 30vw;
+    height: auto;
+    transform: translate(-50%, 0%);
+  }
+
+  .community-part {
+    height: 100vw;
+  }
+  .community-part__box {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    width: 75vw;
+  }
+  .community-part__photo-box {
+    width: 50vw;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  .community-part__control-box {
+    text-align: center;
+  }
+  .community-part__control {
+    margin: 0 1vw;
+  }
+  .community-part__image:nth-of-type(1) {
+    float: left;
+  }
+  .community-part__image:nth-of-type(2) {
+    float: right;
+  }
+
+  .download-part {
+    height: 100vw;
+  }
+  .download-part__box {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 75vw;
+  }
+  .download-part__btn {
+    display: block;
+    margin: 2vw auto;
+  }
 }
